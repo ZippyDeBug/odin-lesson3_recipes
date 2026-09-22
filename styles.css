@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body { 
+    width: 600px;
+    background-color: white;
+    font-size: 12pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    margin: 10px 0px;
+}
+
+p,
+li,
+.subtitle {
+    padding: 10px 0px;
+}
+
+.title,
+.subtitle {
+    color: peachpuff;
+    background-color: black
+}
+
+.title {   
+    font-size: 20pt;
+    font-weight: 800px;
+    text-align: center;
+        
+}
+
+.subtitle { 
+    font-size: 15pt;
+    font-weight: 600px;
+    text-align: left;
+
+}
+
+.description { 
+
+}
+
+.ingredients li {
+    background-color: lightgoldenrodyellow;
+}
+
+.ingredients li.odd {
+    background-color: peachpuff;
+}
+
+.steps li {
+    font-weight: 300;
+    background-color: lightgoldenrodyellow;
+}
+
+.steps .odd {
+    background-color: peachpuff;
+}
