@@ -1,5 +1,4 @@
 body { 
-    max-width: 1200px;
     background-color: #F8F3E8;
     font-size: 12pt;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -93,7 +92,8 @@ li,
     justify-self: center;
     text-align: left; 
     padding: 10px;
-        }
+
+}
 
 .ingredients li,
 .steps li {
@@ -112,25 +112,19 @@ li,
 
 
 .headline-flex { 
+    font-size: 20pt;
     Display: flex;
     gap: 12px;
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
-    padding-left: 30%;
-    padding-right: 30%;
-    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.headline-flex li {
-    font-size: 20px;
-    }
 
 .logo { 
 margin-right: auto;
-flex: 0 1 300px;
-text-align: left;
-justify-self: left;
 font-weight: 800;
 
 }
