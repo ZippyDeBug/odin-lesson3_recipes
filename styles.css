@@ -1,41 +1,73 @@
 body { 
-    background-color: white;
+    max-width: 1200px;
+    background-color: #F8F3E8;
     font-size: 12pt;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
     }
 
 div {
     margin: 10px 0px;
+    
+}
+
+img {
+    border: 3px solid #1E1B18;
+    box-shadow: 5px 5px 0 #1E1B18
+}
+
+ol {
+    padding-inline-start: 0px;
+    list-style-position: inside;
 }
 
 p,
 li,
 .subtitle {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .title,
 .subtitle {
-    color: peachpuff;
-    background-color: black
-}
+    padding: 10px;
+    color: #111;
+    border: 3px solid #1E1B18;
+    box-shadow: 5px 5px #1E1B18;
+    max-width: 800px;
+    min-width: 350px;
+    justify-self: center;
+    }
 
 .title {   
     font-size: 20pt;
-    font-weight: 800px;
+    font-weight: 800;
     text-align: center;
+    background-color: #E2B84B;
         
 }
 
 .subtitle { 
     font-size: 15pt;
-    font-weight: 600px;
-    text-align: left;
+    font-weight: 600;
+    text-align: center;
+    background-color: #aec1f5;
 
 }
 
-.description { 
+.description p {
+    border: 3px solid #111; 
+    box-shadow: 5px 5px 0 #111;
+    padding: 10px;
+    max-width: 600px;
+    justify-self: center;
+    background-color: #F3E7C9;
 
+}
+
+.volume {
+    font-weight: 800;
+    text-align: center;
 }
 
 .ingredients ul { 
@@ -44,43 +76,51 @@ li,
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;   
+    justify-self: center;
+    justify-content: center;
+    max-width: 800px;
+    padding-inline-start: 0px;
+    }
 
-}
 
 .ingredients li {
-;
-    background-color: lightgoldenrodyellow;
-    flex: 0 1 150px;
-    margin: 10px 
-
-}
-
-.ingredients li.odd {
-    background-color: peachpuff;
-}
-
-.volume {
-    font-weight: 800;
+    flex: 0 1 150px;    
 }
 
 .steps li {
+    width: 400px;
+    flex: 0 1 auto;
+    justify-self: center;
+    text-align: left; 
+    padding: 10px;
+        }
+
+.ingredients li,
+.steps li {
     margin: 10px;
     font-weight: 300;
-    background-color: lightgoldenrodyellow;
+    background-color: #e47a6a;
+    border: 3px solid #1E1B18;
+    box-shadow: 5px 5px 0 #1E1B18;
+    }
+
+.ingredients .odd,
+.steps .odd {
+    background-color:  #F3E7C9;
+    color: #111;
 }
 
-.steps .odd {
-    background-color: peachpuff;
-}
 
 .headline-flex { 
     Display: flex;
     gap: 12px;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-inline-start: 0px;
     list-style: none;
-    }
+    padding-left: 30%;
+    padding-right: 30%;
+    flex: 1 1 auto;
+}
 
 .headline-flex li {
     font-size: 20px;
@@ -88,6 +128,10 @@ li,
 
 .logo { 
 margin-right: auto;
+flex: 0 1 300px;
+text-align: left;
+justify-self: left;
+font-weight: 800;
 
 }
 
