@@ -1,5 +1,4 @@
 body { 
-    width: 600px;
     background-color: white;
     font-size: 12pt;
     font-family: 'Courier New', Courier, monospace;
@@ -12,7 +11,7 @@ div {
 p,
 li,
 .subtitle {
-    padding: 10px 0px;
+    padding: 10px;
 }
 
 .title,
@@ -39,15 +38,20 @@ li,
 
 }
 
-.ingredients { 
+.ingredients ul { 
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;   
+
 }
 
 .ingredients li {
+;
     background-color: lightgoldenrodyellow;
-    
+    flex: 0 1 150px;
+    margin: 10px 
 
 }
 
@@ -55,7 +59,12 @@ li,
     background-color: peachpuff;
 }
 
+.volume {
+    font-weight: 800;
+}
+
 .steps li {
+    margin: 10px;
     font-weight: 300;
     background-color: lightgoldenrodyellow;
 }
